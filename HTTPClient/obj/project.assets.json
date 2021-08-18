@@ -1,0 +1,126 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "ProtobufPOC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "protobuf-net": "2.4.0"
+        },
+        "compile": {
+          "bin/placeholder/ProtobufPOC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProtobufPOC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProtobufPOC/1.0.0": {
+      "type": "project",
+      "path": "../ProtobufPOC/ProtobufPOC.csproj",
+      "msbuildProject": "../ProtobufPOC/ProtobufPOC.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.1": [
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Newtonsoft.Json >= 11.0.2",
+      "ProtobufPOC >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\noaha\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\noaha\\OneDrive\\Desktop\\labs\\Net\\Asp.netcoreProtobuf\\HTTPClient\\WebClientProtobuf.csproj",
+      "projectName": "WebClientProtobuf",
+      "projectPath": "C:\\Users\\noaha\\OneDrive\\Desktop\\labs\\Net\\Asp.netcoreProtobuf\\HTTPClient\\WebClientProtobuf.csproj",
+      "packagesPath": "C:\\Users\\noaha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\noaha\\OneDrive\\Desktop\\labs\\Net\\Asp.netcoreProtobuf\\HTTPClient\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\noaha\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.1"
+      ],
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "projectReferences": {
+            "C:\\Users\\noaha\\OneDrive\\Desktop\\labs\\Net\\Asp.netcoreProtobuf\\ProtobufPOC\\ProtobufPOC.csproj": {
+              "projectPath": "C:\\Users\\noaha\\OneDrive\\Desktop\\labs\\Net\\Asp.netcoreProtobuf\\ProtobufPOC\\ProtobufPOC.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.1": {
+        "targetAlias": "netcoreapp2.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.1.0, )",
+            "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[11.0.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Newtonsoft.Json (>= 11.0.2)' for '.NETCoreApp,Version=v2.1'.",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NETCore.App (>= 2.1.0)' for '.NETCoreApp,Version=v2.1'.",
+      "libraryId": "Microsoft.NETCore.App",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'protobuf-net (>= 2.4.0)' for '.NETCoreApp,Version=v2.1'.",
+      "libraryId": "protobuf-net",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
+}
