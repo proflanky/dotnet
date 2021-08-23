@@ -6,7 +6,8 @@ stages:
   
 package:
   stage: package
-  trigger: main
+  trigger: 
+    branch: main
   image: mcr.microsoft.com/dotnet/sdk:2.1
   script: 
     - 'dotnet restore'
