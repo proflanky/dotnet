@@ -1,7 +1,29 @@
 stages:
+  - package
+  - test
   - build
   - deploy
   
+package:
+  stage: package
+  image: mcr.microsoft.com/dotnet/sdk:2.1
+  script: 
+    - 'dotnet restore'
+    - 'dotnet build' 
+
+Test:
+  stage: test
+  image: mcr.microsoft.com/dotnet/sdk:2.1
+  script:
+    - 'dotnet test --test-adapter-path:. --logger:"junit;LogFilePath=./test-result.xml;MethodFormat=Class;FailureBodyFormat=Verbose"'
+  artifacts:
+    when: always
+    paths:
+      - ./test-result.xml
+    reports:
+      junit:
+        - ./test-result.xml
+
 build_image:
     stage: build
     #tags:
